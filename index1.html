@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-group {
+        color: #505F98;
+    }
+
+    .custom-button {
+        background-color: #111B47;
+        color: #fff;
+        width: 160px;
+        border-radius: 3px;
+        border: none;
+        padding: 1px 0px 1px 0px;
+        z-index: 1;
+    }
+
+    .custom-button-second {
+
+        background-color: #111B47;
+        color: #fff;
+        width: 160px;
+        border-radius: 3px;
+        border: none;
+        padding: 5px;
+    }
+
+    .custom-button :hover {
+        background-color: #162567;
+        color: #fff;
+    }
+
+
+    .custom-heading {
+        color: #091133;
+        /* font-size: 50px; */
+    }
+
+    .custom-heading-paragraph {
+        color: #505F98;
+    }
+
+    .custom-heading-btn {
+        background-color: #111B47;
+        color: #fff;
+        border-radius: 2px;
+    }
+
+    .custom-heading-btn:hover {
+        background-color: #162567;
+        color: #fff;
+    }
+
+    .custom-heading-btn-second {
+        border: 2px solid #111B47;
+        border-radius: 2px;
+        color: #111B47;
+    }
+
+    .custom-heading-btn-second:hover {
+        border: 2px solid #111B47;
+        background-color: #19255c;
+        color: #fff;
+    }
+
+
+
+    .primary-color {
+        color: #091133;
+    }
+
+
+    .custom-bg-image {
+        background-image: url('assets/path.png');
+        background-position: top right;
+        background-repeat: no-repeat;
+        /* background-size: 1050px 1050px; */
+        /* height: 90vh; */
+        /* width: 100vw; */
+    }
+
+
+
+    .navbar-custom .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-custom .navbar-toggler {
+        border-color: #ECF0F1;
+    }
+
+    /* .custom-image {
+
+        object-fit: cover;
+
+    } */
+
+
+    .custom-color-section-two {
+        color: #6F7CB2;
+    }
+
+    .footer-bg-img {
+
+        background-image: url('assets/Rectangle.png');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* height: 80vh; */
+    }
+
+    .custom-color {
+        color: #222F65;
+    }
+
+    .custom-color-second {
+        color: #5D6970;
+
+    }
+
+    .custom-footer {
+        background-color: #E7ECFF;
+    }
+
+    .custom-col-border {
+        border: 1px solid #CDD1D4;
+
+    }
+
+    .nav-link {
+        color: #505F98;
+    }
+
+    .margin-top {
+        margin-top: 200px;
+    }
+</style>
+
+<body>
+    <div class="custom-bg-image">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                    </ul>
+                    <div class="ms-auto d-lg-none">
+                        <button class="btn custom-button">Buy Now</button>
+                    </div>
+                </div>
+                <a class="navbar-brand custom-color fs-2 fw-bold" href="#">Landing</a>
+
+                <div class="d-none d-lg-block ms-auto ">
+                    <button class="btn custom-button">Buy Now</button>
+                </div>
+            </div>
+        </nav>
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="row d-flex align-items-center p-4">
+                    <div class="col-lg-6 p-0">
+                        <h1 class="custom-heading fs-1">Introduce Your Product <br> Quickly & Effactively</h1>
+                        <p class="custom-heading-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            <br>
+                            Aperiam autem sapiente pariatur fugit iusto dolorum veniam <br> officiis asperiores quasi
+                            inventore fugit, obcaecati, veritatis nemo <br> <br> Lorem ipsum dolor,
+                            sit amet consectetur adipisicing elit. Eum, vel! Officia? <br>Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Repellat, hic.
+                        </p>
+
+                        <div class="mt-5 d-flex gap-3">
+                            <button class=" btn custom-heading-btn fw-medium ">Purchase UI Kit</button>
+                            <button class=" btn custom-heading-btn-second fw-medium">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 mt-5 p-0">
+                        <img src="assets/Group.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="mt-5">
+        <div class="container margin-top">
+            <div class="row align-items-center p-4">
+                <div class="col-lg-6 p-0">
+                    <div class="h1 custom-heading">Light, Fast & Powerful</div>
+                    <p class="custom-color-section-two">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo
+                        ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                        montes, nascetur ridiculus <br><br>
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                        Nulla consequat massa quis enim.</p>
+
+                    <div class="d-flex gap-3 mt-5">
+                        <div class="p-1">
+                            <img src="assets/Icon.png" alt="">
+                            <div class=" fw-semibold custom-heading mt-3">Title Goes Here</div>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                ligula eget
+                                dolor. </p>
+                        </div>
+
+                        <div>
+                            <img src="assets/Icon.png" alt="">
+                            <div class=" fw-semibold custom-heading mt-3">Title Goes Here</div>
+                            <p class="mt-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                ligula eget
+                                dolor. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end p-0">
+                    <img src="assets/img-one.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mt-5">
+        <div class="container margin-top">
+            <div class="row align-items-center p-4">
+                <div class="col-lg-6 p-0">
+                    <img src="assets/img-two.png" alt="" class="img-fluid">
+                </div>
+
+                <div class="col-lg-6 p-0">
+                    <div class="mt-5">
+                        <div class="h1 custom-heading ">Light, Fast & Powerful</div>
+                        <p class="custom-color-section-two">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit.
+                            Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                            montes, nascetur ridiculus <br><br>
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="mt-5">
+        <div class="container margin-top">
+            <div class="row mt-5 p-4">
+                <div class="col-lg-6 p-0">
+                    <img src="assets/img-three.png" alt="" class="img-fluid">
+                </div>
+
+
+                <div class="col-lg-6 p-0">
+                    <div class="mt-5">
+                        <div class="h1 custom-heading">Light, Fast & Powerful</div>
+                        <p class="custom-color-section-two ">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit.
+                            Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                            montes, nascetur ridiculus <br><br>
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="mt-5">
+        <div class="container margin-top">
+            <div class="row align-items-center p-4">
+                <div class="col-lg-6">
+                    <img src="assets/img-four.png" alt="" class="img-fluid">
+                </div>
+
+
+                <div class="col-lg-6">
+                    <div class="mt-5 pt-5">
+                        <div class="h1 custom-heading">Light, Fast & Powerful</div>
+                        <p class="custom-color-section-two">Lorem ipsum dolor sit amet, consectetuer adipiscing
+                            elit.
+                            Aenean commodo
+                            ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                            montes, nascetur ridiculus <br><br>
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                            Nulla consequat massa quis enim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="margin-top">
+        <div class="footer-bg-img d-flex flex-column justify-content-center">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="pt-5 mt-5">
+                        <div class="h1 text-center custom-heading">A Price To Suit Everyone</div>
+                        <p class="text-center custom-color-section-two ">Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Aenean
+                            commodo ligula eget dolor.
+                            Aenean massa. <br>
+                            Cum sociis natoque penatibus et magnis dis parturient <br> montes, nascetur ridiculus
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="custom-color fs-1 fw-bold text-center">$40</div>
+                        <p class="custom-color fs-5 fw-medium">UI Design Kit</p>
+                    </div>
+
+                    <div class="p-3 mt-5 text-center">
+                        <p class="text-center custom-color-second">See, One price. Simple.</p>
+                        <button class="btn custom-button-second">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="custom-footer p-5">
+
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center text-center">
+                    <div class="col-lg-4">
+                        <span class="custom-color-second">&copy;2024 Mohit Tomar <br></span>
+                    </div>  
+                    <div class="col-lg-4">
+                        <div class="h2 custom-color fw-bold">Landing <br></div>
+                    </div>
+                    <div class="col-lg-4">
+                        <button class="btn custom-button-second">Purchase Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row mt-4 d-flex align-items-center justify-content-center">
+                    <div class="col-lg-12 custom-col-border"></div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row  d-flex align-items-center justify-content-start">
+                    <div class="col-lg-6 mt-3">
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <a href="#home" class="text-decoration-none custom-color-second">Home</a>
+                            <a href="#about" class="text-decoration-none custom-color-second">About</a>
+                            <a href="#contact" class="text-decoration-none custom-color-second text-end">Contact</a>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-6 mt-3">
+                        <div class="d-flex align-items-center justify-content-center gap-3">
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-whatsapp"></i>
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
